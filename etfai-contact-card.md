@@ -1,8 +1,13 @@
 Macro Name: etfai-contact-card
+
 Visibility: Visible to all users in the Macro Browser
+
 Macro Title: ETF.AI Contact Card
+
 Description: ⚠️ Works only in the ETF.AI space ⚠️
+
 Categories: Formatting
+
 Macro Body Processing: Rendered
 
 ```

@@ -1,8 +1,13 @@
 Macro Name: etfai-case-study-card
+
 Visibility: Visible to all users in the Macro Browser
+
 Macro Title: ETF.AI Case Study Card
+
 Description: ⚠️ Works only in the ETF.AI space ⚠️
+
 Categories: Formatting
+
 Macro Body Processing: No macro body
 
 ```
