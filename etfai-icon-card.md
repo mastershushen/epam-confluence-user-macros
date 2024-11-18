@@ -22,12 +22,12 @@ Macro Body Processing: No macro body
 
 ## @param Title:title=Title|type=string|required=true
 ## @param ImageURL:title=Image URL|type=string|required=true
-## @param Color:title=Color|type=enum|enumValues=violet,violet-gradient-1,violet-gradient-2,green-gradient|required=true
+## @param Color:title=Color|type=enum|enumValues=violet,twilight,galaxy,spring,sunset|required=true
 ## @param LinkTitle:title=Link Title|type=string|required=true
 ## @param LinkURL:title=Link URL|type=string|required=true
 ## @param LinkTarget:title=Open in New Tab|type=boolean
 
-<div class="etfai-icon-card etfai-icon-card--v1">
+<div class="etfai-icon-card etfai-icon-card--v2">
     <div class="etfai-icon-card__inner etfai-icon-card__inner--$paramColor">
         <div class="etfai-icon-card__img">
             <img src="$paramImageURL" alt="$paramTitle" />
