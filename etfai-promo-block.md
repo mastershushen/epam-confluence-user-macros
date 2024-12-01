@@ -20,16 +20,20 @@ Macro Body Processing: Rendered
 ## Date created: 14/11/2024
 ## Installed by: Vasily Fomchenko
 
-## @param Title:title=Title|type=string|required=true
-## @param Subtitle:title=Subtitle|type=string|required=true
+## @param Title:title=Title|type=string
+## @param Subtitle:title=Subtitle|type=string
 
-<div class="etfai-promo-block etfai-promo-block--v1">
-    <div class="etfai-promo-block__subtitle">
-        $paramSubtitle
-    </div>
-    <div class="etfai-promo-block__title">
-        $paramTitle
-    </div>
+<div class="etfai-promo-block etfai-promo-block--v2">
+    #if ($paramSubtitle)
+        <div class="etfai-promo-block__subtitle">
+            $paramSubtitle
+        </div>
+    #end
+    #if ($paramTitle)
+        <div class="etfai-promo-block__title">
+            $paramTitle
+        </div>
+    #end
     <div class="etfai-promo-block__description">
         $body
     </div>
