@@ -27,7 +27,7 @@ Macro Body Processing: No macro body
 ## @param CSS:title=CSS Class|type=string
 
 <ac:structured-macro ac:name="auibutton">
-    <ac:parameter ac:name="class">etfai-button etfai-button--v2 etfai-button--$paramSize $paramCSS</ac:parameter>
+    <ac:parameter ac:name="class">etfai-button etfai-button--v2 etfai-button--$paramSize $!paramCSS</ac:parameter>
     <ac:parameter ac:name="type">standard</ac:parameter>
     <ac:parameter ac:name="title">$paramTitle</ac:parameter>
     <ac:parameter ac:name="url">$paramURL</ac:parameter>

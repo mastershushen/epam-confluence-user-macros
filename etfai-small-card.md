@@ -29,7 +29,7 @@ Macro Body Processing: No macro body
 ## @param LinkTarget:title=Open in New Tab|type=boolean
 ## @param CSS:title=CSS Class|type=string
 
-<div class="etfai-small-card etfai-small-card--v2 etfai-small-card--$paramType $paramCSS">
+<div class="etfai-small-card etfai-small-card--v2 etfai-small-card--$paramType $!paramCSS">
     <div class="etfai-small-card__inner">
         <div class="etfai-small-card__img">
             <img src="$paramImageURL" alt="$paramTitle" />

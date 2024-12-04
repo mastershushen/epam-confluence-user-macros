@@ -26,7 +26,7 @@ Macro Body Processing: No macro body
 ## @param LinkTarget:title=Open in New Tab|type=boolean
 ## @param CSS:title=CSS Class|type=string
 
-<div class="etfai-contact-button etfai-contact-button--v2 $paramCSS">
+<div class="etfai-contact-button etfai-contact-button--v2 $!paramCSS">
     <div class="etfai-contact-button__img">
         <img src="$paramImageURL" alt="$paramLinkTitle" />
     </div>

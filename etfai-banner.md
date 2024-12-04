@@ -27,7 +27,7 @@ Macro Body Processing: Rendered
 ## @param LinkTarget:title=Open in New Tab|type=boolean
 ## @param CSS:title=CSS Class|type=string
 
-<div class="etfai-banner etfai-banner--v2 etfai-banner--$paramColor etfai-banner--$paramAlign $paramCSS">
+<div class="etfai-banner etfai-banner--v2 etfai-banner--$paramColor etfai-banner--$paramAlign $!paramCSS">
     <div>
         $body
     </div>
