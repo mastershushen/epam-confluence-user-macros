@@ -22,8 +22,9 @@ Macro Body Processing: Rendered
 
 ## @param Title:title=Title|type=string
 ## @param Subtitle:title=Subtitle|type=string
+## @param CSS:title=CSS Class|type=string
 
-<div class="etfai-promo-block etfai-promo-block--v2">
+<div class="etfai-promo-block etfai-promo-block--v3 $paramCSS">
     #if ($paramSubtitle)
         <div class="etfai-promo-block__subtitle">
             $paramSubtitle

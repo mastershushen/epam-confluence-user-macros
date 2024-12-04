@@ -27,8 +27,9 @@ Macro Body Processing: No macro body
 ## @param LinkTitle:title=Link Title|type=string|required=true
 ## @param LinkURL:title=Link URL|type=string|required=true
 ## @param LinkTarget:title=Open in New Tab|type=boolean
+## @param CSS:title=CSS Class|type=string
 
-<div class="etfai-case-study-card etfai-case-study-card--v1">
+<div class="etfai-case-study-card etfai-case-study-card--v2 $paramCSS">
     #if ($paramSubtitle1)
         <div class="etfai-case-study-card__subtitle">
             $paramSubtitle1

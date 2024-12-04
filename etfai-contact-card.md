@@ -25,8 +25,9 @@ Macro Body Processing: Rendered
 ## @param LinkTitle:title=Link Title|type=string|required=true
 ## @param LinkURL:title=Link URL|type=string|required=true
 ## @param LinkTarget:title=Open in New Tab|type=boolean
+## @param CSS:title=CSS Class|type=string
 
-<div class="etfai-contact-card etfai-contact-card--v1">
+<div class="etfai-contact-card etfai-contact-card--v2 $paramCSS">
     <div class="etfai-contact-card__img">
         <img src="$paramImageURL" alt="$paramTitle" />
     </div>

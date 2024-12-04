@@ -24,9 +24,10 @@ Macro Body Processing: No macro body
 ## @param Title:title=Title|type=string|required=true
 ## @param URL:title=URL|type=string|required=true
 ## @param Target:title=Open in New Tab|type=boolean
+## @param CSS:title=CSS Class|type=string
 
 <ac:structured-macro ac:name="auibutton">
-    <ac:parameter ac:name="class">etfai-button etfai-button--v1 etfai-button--$paramSize</ac:parameter>
+    <ac:parameter ac:name="class">etfai-button etfai-button--v2 etfai-button--$paramSize $paramCSS</ac:parameter>
     <ac:parameter ac:name="type">standard</ac:parameter>
     <ac:parameter ac:name="title">$paramTitle</ac:parameter>
     <ac:parameter ac:name="url">$paramURL</ac:parameter>

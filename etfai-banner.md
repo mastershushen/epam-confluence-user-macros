@@ -25,14 +25,15 @@ Macro Body Processing: Rendered
 ## @param LinkTitle:title=Link Title|type=string|required=true
 ## @param LinkURL:title=Link URL|type=string|required=true
 ## @param LinkTarget:title=Open in New Tab|type=boolean
+## @param CSS:title=CSS Class|type=string
 
-<div class="etfai-banner etfai-banner--v1 etfai-banner--$paramColor etfai-banner--$paramAlign">
+<div class="etfai-banner etfai-banner--v2 etfai-banner--$paramColor etfai-banner--$paramAlign $paramCSS">
     <div>
         $body
     </div>
     <div>
         <ac:structured-macro ac:name="auibutton">
-            <ac:parameter ac:name="class">etfai-button etfai-button--v1 etfai-button--lg</ac:parameter>
+            <ac:parameter ac:name="class">etfai-button etfai-button--lg</ac:parameter>
             <ac:parameter ac:name="type">standard</ac:parameter>
             <ac:parameter ac:name="title">$paramLinkTitle</ac:parameter>
             <ac:parameter ac:name="url">$paramLinkURL</ac:parameter>

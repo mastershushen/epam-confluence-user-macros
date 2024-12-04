@@ -26,8 +26,9 @@ Macro Body Processing: Rendered
 ## @param LinkTitle:title=Link Title|type=string|required=true
 ## @param LinkURL:title=Link URL|type=string|required=true
 ## @param LinkTarget:title=Open in New Tab|type=boolean
+## @param CSS:title=CSS Class|type=string
 
-<div class="etfai-flip-card etfai-flip-card--v1">
+<div class="etfai-flip-card etfai-flip-card--v2 $paramCSS">
     <div class="etfai-flip-card__inner">
         <div class="etfai-flip-card__front etfai-flip-card__front--$paramColor">
             <div class="etfai-flip-card__category">
