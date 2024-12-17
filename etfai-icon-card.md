@@ -22,7 +22,7 @@ Macro Body Processing: No macro body
 
 ## @param Title:title=Title|type=string|required=true
 ## @param ImageURL:title=Image URL|type=string|required=true
-## @param Color:title=Color|type=enum|enumValues=violet,twilight,galaxy,spring,sunset|required=true
+## @param Color:title=Color|type=enum|enumValues=violet,twilight,galaxy,spring,sunset,image|required=true
 ## @param LinkTitle:title=Link Title|type=string|required=true
 ## @param LinkURL:title=Link URL|type=string|required=true
 ## @param LinkTarget:title=Open in New Tab|type=boolean
