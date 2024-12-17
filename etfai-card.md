@@ -21,8 +21,8 @@ Macro Body Processing: Rendered
 ## Installed by: Vasily Fomchenko
 
 ## @param Title:title=Title|type=string|required=true
-## @param LinkTitle:title=Link Title|type=string|required=true
-## @param LinkURL:title=Link URL|type=string|required=true
+## @param LinkTitle:title=Link Title|type=string
+## @param LinkURL:title=Link URL|type=string
 ## @param LinkTarget:title=Open in New Tab|type=boolean
 ## @param CSS:title=CSS Class|type=string
 
@@ -33,15 +33,17 @@ Macro Body Processing: Rendered
     <div class="etfai-card__description">
         $body
     </div>
-    <div class="etfai-card__link-title">
-        $paramLinkTitle
-    </div>
-    <ac:structured-macro ac:name="auibutton">
-        <ac:parameter ac:name="class">etfai-card__link</ac:parameter>
-        <ac:parameter ac:name="type">subtle</ac:parameter>
-        <ac:parameter ac:name="title">$paramLinkTitle</ac:parameter>
-        <ac:parameter ac:name="url">$paramLinkURL</ac:parameter>
-        <ac:parameter ac:name="target">$paramLinkTarget</ac:parameter>
-    </ac:structured-macro>
+    #if ($paramLinkTitle && $paramLinkURL)
+        <div class="etfai-card__link-title">
+            $paramLinkTitle
+        </div>
+        <ac:structured-macro ac:name="auibutton">
+            <ac:parameter ac:name="class">etfai-card__link</ac:parameter>
+            <ac:parameter ac:name="type">subtle</ac:parameter>
+            <ac:parameter ac:name="title">$paramLinkTitle</ac:parameter>
+            <ac:parameter ac:name="url">$paramLinkURL</ac:parameter>
+            <ac:parameter ac:name="target">$paramLinkTarget</ac:parameter>
+        </ac:structured-macro>
+    #end
 </div>
 ```
