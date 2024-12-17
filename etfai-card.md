@@ -26,7 +26,7 @@ Macro Body Processing: Rendered
 ## @param LinkTarget:title=Open in New Tab|type=boolean
 ## @param CSS:title=CSS Class|type=string
 
-<div class="etfai-card etfai-card--v2 $!paramCSS">
+<div class="etfai-card etfai-card--v3 $!paramCSS">
     <div class="etfai-card__title">
         $paramTitle
     </div>
